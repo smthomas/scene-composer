@@ -190,10 +190,10 @@ export const YamlGenerator: React.FC = () => {
           <div className="flex items-start justify-between">
             <div>
               <h1 className="text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-                Veo3 Prompt Composer
+                Scene Composer
               </h1>
               <p className="text-muted-foreground mt-2">
-                Create complex veo3 prompts with an intuitive interface
+                A Veo3 prompt composer with an intuitive interface
               </p>
             </div>
             <div className="flex items-center gap-2">
@@ -204,7 +204,7 @@ export const YamlGenerator: React.FC = () => {
                 onLoadPrompt={handleLoadPrompt}
               />
               <a
-                href="https://github.com/smthomas/veo3-composer"
+                href="https://github.com/smthomas/scene-composer"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-md hover:bg-muted transition-colors duration-200"
@@ -276,7 +276,9 @@ export const YamlGenerator: React.FC = () => {
           <div className="space-y-6">
             <Card className="p-6 shadow-card sticky top-6">
               <div className="flex items-center justify-between mb-4">
-                <h2 className="text-xl font-semibold">YAML Preview</h2>
+                <h2 className="text-xl font-semibold">
+                  Veo3 Prompt (YAML format)
+                </h2>
                 <Button
                   onClick={copyToClipboard}
                   variant="outline"

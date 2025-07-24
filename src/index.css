@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* YAML Generator Design System - Professional tool aesthetic */
+
+@layer base {
+  :root {
+    --background: 215 25% 97%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    --primary: 213 78% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 213 90% 65%;
+
+    --secondary: 215 15% 92%;
+    --secondary-foreground: 215 25% 25%;
+
+    --muted: 215 15% 95%;
+    --muted-foreground: 215 15% 45%;
+
+    --accent: 45 100% 65%;
+    --accent-foreground: 215 25% 15%;
+
+    --destructive: 0 75% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 15% 88%;
+    --input: 215 15% 96%;
+    --ring: 213 78% 55%;
+
+    --timeline-bg: 215 20% 98%;
+    --timeline-border: 215 15% 85%;
+    --sequence-bg: 213 78% 55%;
+    --sequence-border: 213 60% 45%;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(213 78% 55%), hsl(213 90% 65%));
+    --gradient-subtle: linear-gradient(180deg, hsl(215 25% 99%), hsl(215 15% 95%));
+    
+    --shadow-elegant: 0 8px 32px -8px hsl(213 78% 55% / 0.2);
+    --shadow-card: 0 4px 16px -4px hsl(215 15% 25% / 0.1);
+    
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 213 78% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 213 90% 65%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 45 100% 65%;
+    --accent-foreground: 215 25% 15%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 213 78% 55%;
+    
+    --timeline-bg: 215 20% 12%;
+    --timeline-border: 215 15% 25%;
+    --sequence-bg: 213 78% 55%;
+    --sequence-border: 213 60% 45%;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(213 78% 55%), hsl(213 90% 65%));
+    --gradient-subtle: linear-gradient(180deg, hsl(215 25% 10%), hsl(215 15% 15%));
+    
+    --shadow-elegant: 0 8px 32px -8px hsl(213 78% 55% / 0.3);
+    --shadow-card: 0 4px 16px -4px hsl(215 15% 5% / 0.5);
+    
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
